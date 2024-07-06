@@ -1,0 +1,31 @@
+function analyzeSentence(sentence) {
+    // Length of the sentence (number of characters)
+    const sentenceLength = sentence.length;
+    
+    // Number of words (assuming words are separated by a single space)
+    const words = sentence.split(' ');
+    const numWords = words.length;
+    
+    // Number of vowels in the sentence
+    const vowels = 'aeiouAEIOU';
+    let numVowels = 0;
+    for (let char of sentence) {
+        if (vowels.includes(char)) {
+            numVowels++;
+        }
+    }
+    
+    return {
+        sentenceLength: sentenceLength,
+        numWords: numWords,
+        numVowels: numVowels
+    };
+}
+
+// Example usage
+const sentence = "The quick brown fox jumps over the lazy dog.";
+const result = analyzeSentence(sentence);
+
+console.log(`Sentence Length: ${result.sentenceLength} characters`);
+console.log(`Number of Words: ${result.numWords}`);
+console.log(`Number of Vowels: ${result.numVowels}`);
