@@ -1,0 +1,12 @@
+VisuAlgo: 
+
+Array
+
+Sorting
+
+linked list
+
+Binary Search Tree
+
+Note: I have checked this list and it is the first time I use it to understand the algorithm. It looks good,
+ but sometimes I feel that the code that appears as an explanation needs to be simplified more
